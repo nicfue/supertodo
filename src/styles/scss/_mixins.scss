@@ -1,0 +1,108 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin font-size{
+  @media #{$phone} {
+    font-size: $base-font * 1.1;
+  }
+  @media #{$tablet} {
+    font-size: $base-font * 1.2;
+
+  }
+  @media #{$desktop} {
+    font-size: $base-font * 1.3;
+  }
+}
+
+@mixin h1 {
+  @media #{$phone} {
+    font-size: $base-font * 1.2;
+  }
+  @media #{$tablet} {
+    font-size: $base-font * 1.6;
+  }
+  @media #{$desktop} {
+    font-size: $base-font * 1.8;
+  }
+}
+
+@mixin h2 {
+  @media #{$phone} {
+    font-size: $base-font * 1.3;
+    padding: 11px;
+  }
+  @media #{$tablet} {
+    font-size: $base-font * 1.4;
+    padding: 13px;
+  }
+  @media #{$desktop} {
+    font-size: $base-font * 1.5;
+    padding: 15px;
+  }
+}
+
+@mixin sizeLoginForm {
+  @media #{$phone} {
+    width: 70%;
+  }
+  @media #{$tablet} {
+    width: 30%;
+  }
+  @media #{$desktop} {
+    width: 25%;
+  }
+}
+
+@mixin addItem-width {
+  @media #{$phone} {
+    width: 90%;
+  }
+  @media #{$tablet} {
+    width: 50%;
+  }
+  @media #{$desktop} {
+    width: 40%;
+  }
+}
+
+@mixin button {
+  @media #{$phone} {
+    width: 90px;
+  }
+  @media #{$tablet} {
+    width: 100px;
+  }
+  @media #{$desktop} {
+    width: 110px;
+  }
+}
+
+@mixin responsiveDiv  {
+  margin: 0 auto;
+  @media #{$phone} {
+    width: 80%;
+  }
+  @media #{$tablet} {
+    width: 60%;
+  }
+  @media #{$desktop} {
+    width: 50%;
+  }
+}
+
+@mixin grids {
+  @media #{$phone} {
+    width: calc(100% - 50px);
+  }
+  @media #{$tablet} {
+    width: calc(55% - 80px);
+
+  }
+  @media #{$desktop} {
+    width: calc(30% );
+  }
+}
