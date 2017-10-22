@@ -7,5 +7,6 @@
 install dependencies
 - npm install
 
-serve with hot reload at localhost:8080
-- npm run dev
+
+## GH-pages
+https://nicfue.github.io/supertodo/
